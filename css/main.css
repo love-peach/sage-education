@@ -1,0 +1,259 @@
+/* -------------------- 基础样式 begin -------------------- */
+body {
+  font: 12px/1.5 "Microsoft YaHei",tahoma,arial,Hiragino Sans GB,\5b8b\4f53;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* -------------------- 基础样式 end -------------------- */
+
+/* -------------------- 页面布局样式 begin -------------------- */
+
+body {
+  min-width: 1200px;
+}
+
+.container {
+  min-width: 1200px;
+}
+
+.demo {
+  position: relative;
+  margin: 10px 0;
+  height: 600px;
+  border: 1px solid red;
+}
+/* -------------------- 页面布局样式 end -------------------- */
+
+/* -------------------- 页面样式 begin -------------------- */
+
+/* header */
+.header {
+  height: 80px;
+  background: rgba(0,0,0,0.60);
+}
+.brand {
+  display: inline-block;
+  height: 80px;
+  padding-left: 70px;
+  padding-top: 20px;
+  background: no-repeat transparent url(https://picsum.photos/60/35) left center;
+}
+.brand .brand-name {
+  color:#fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 8px;  
+}
+.brand .brand-name-en {
+  color: #fff;
+  font-size:12px;
+}
+
+.header .menu {
+  float: right;
+}
+.header .menu .menu-item {
+  display: inline-block;
+}
+.header .menu .menu-item + .menu-item {
+  padding-left: 50px;
+}
+.header .menu .menu-link {
+  display: block;
+  font-size: 16px;
+  color:#fff;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 5px;
+}
+.header .menu .menu-link:hover {
+  border-bottom: 5px solid #fff;
+}
+.header .menu .menu-link.active {
+  border-bottom: 5px solid #fff;
+}
+
+
+/*
+ * footer 样式
+ */
+.footer {
+  padding-top: 90px;
+  background-color: #2D2D2D;
+}
+
+.footer .footer-brand {
+  margin-bottom: 60px;
+}
+
+
+.footer .footer-qrcode {
+  float: left;
+  width: 120px;
+  padding-right: 180px;
+  box-sizing: content-box;
+  border-right: 1px solid #4E4E4E;
+}
+.footer .footer-qrcode img {
+  height: 120px;
+  width: 120px;
+}
+.footer .footer-qrcode p {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer .sign-info {
+  position: relative;
+  float: left;
+  width: 205px;
+  padding-left: 180px;
+  box-sizing: content-box;
+}
+.footer .sign-info-title {
+  position: absolute;
+  top: -115px;
+  color: #fff;
+  font-size: 20px;
+}
+.footer .sign-info input {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.9);
+  outline: none;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  border-radius:  3px;
+  line-height: 1;
+}
+.footer .sign-info .button {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.9);
+  outline: none;
+  padding: 5px 8px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius:  3px;
+}
+input::-webkit-input-placeholder{
+  color:fff;
+}
+.footer .sign-info input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:fff;
+}
+.footer .sign-info input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:fff;
+}
+.footer .sign-info input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+  color:fff;
+}
+
+
+.footer .footer-qrcode-contact {
+  float: left;
+  width: 120px;
+  padding-right: 100px;
+  padding-left: 100px;
+  box-sizing: content-box;
+}
+.footer .footer-qrcode-contact img {
+  height: 120px;
+  width: 120px;
+}
+.footer .footer-qrcode-contact p {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer .footer-contact {
+  float: left;
+}
+.footer .footer-contact p{
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1;
+}
+.footer .footer-contact .button{
+  margin-top: 35px;
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  background-color: #638EEA;
+  border: 0;
+  outline: none;
+}
+
+
+
+.footer .company-info {
+  padding: 10px 0 40px;
+  margin-top: 150px;
+  border-top: 1px solid #4E4E4E;
+  font-size: 0;
+}
+.footer .company-info li {
+  display: inline-block;
+  width: 33.33%;
+}
+.footer .company-info img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.footer .company-info span {
+  color: #fff;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.beian {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  font-size: 14px;
+  background: #4E4E4E;
+  text-align: center;
+}
+
+/* -------------------- 页面样式 end -------------------- */
