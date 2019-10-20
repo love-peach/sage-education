@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
   <title>圣知教育</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1467041_c1r3swldckh.css">
   <link rel="stylesheet" href="../../dist/css/main.min.css">
   <link rel="stylesheet" href="../../dist/css/home/home.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../../dist/js/common.min.js"></script>
 </head>
 <body>
   <!-- header begin -->
   <div class="header">
     <div class="container">
       <a class="brand" href="/">
-        <p class="brand-name">圣知教育1</p>
+        <p class="brand-name">圣知教育</p>
         <label class="brand-name-en">Sage&nbsp;&nbsp;&nbsp;Education</label>
       </a>
 
@@ -22,13 +26,57 @@
         <li class="menu-item"><a class="menu-link" href="/">教授阵容</a></li>
         <li class="menu-item"><a class="menu-link" href="/">新闻动态</a></li>
         <li class="menu-item"><a class="menu-link" href="/">关于圣知</a></li>
+        <li class="bottomLine"></li>
       </ul>
     </div>
   </div>
   <!-- header end -->
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-img" style="background-image: url('https://static.runoob.com/images/mix/img_fjords_wide.jpg')" ></div>
+        <div class="carousel-caption-custom">
+          <h1>Go to Known SAGE education.</h1>
+          <p>To learn from the best </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img" style="background-image: url('https://static.runoob.com/images/mix/img_fjords_wide.jpg')" ></div>
+        <div class="carousel-caption-custom">
+          <h1>Go to Known SAGE education.</h1>
+          <p>To learn from the best </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img" style="background-image: url('https://static.runoob.com/images/mix/img_fjords_wide.jpg')" ></div>
+        <div class="carousel-caption-custom">
+          <h1>Go to Known SAGE education.</h1>
+          <p>To learn from the best </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev-custom" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon-custom"></span>
+    </a>
+    <a class="carousel-control-next-custom" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon-custom"></span>
+    </a>
+  </div>
   
 
   <div class="container">
+    <i class="iconfont iconcall"></i>
     这里放内容
   </div>
 
@@ -78,12 +126,11 @@
           <img src="../../dist/img/email.png" alt="">
           <span>info@sagedu.com</span>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
-  <!-- footer end -->
   <div class="beian">© 北京圣知教育有限公司 2019  All rights reserved</div>
-  <img src="../../dist/img/home/img/qr_code.png" alt="">
+  <!-- footer end -->
   <script src="../../dist/js/home/home.min.js"></script>
 </body>
 </html>
