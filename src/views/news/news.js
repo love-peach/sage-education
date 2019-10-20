@@ -1,3 +1,5 @@
-/**
- * Created by zhangquanming on 2019/10/20.
- */
+$(function(){
+  $('.news-tab>span').on('click',function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+});
