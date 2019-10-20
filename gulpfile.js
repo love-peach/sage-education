@@ -57,7 +57,12 @@ task('img', () => {
   const imgSuffix = '**/*.+(jpeg|jpg|png|svg|gif|ico)';
   return src([paths.src.img + imgSuffix, paths.src.page + imgSuffix])
   .pipe(plugins.rename(function (path) {
-    path.dirname = path.dirname.split('/')[0]; // 将 views/xxx/img/ 下的图片 提到外面一层 放到 images/xx/ 下。去掉了 img 文件夹
+    // 判断是 window 路径 还是 mac 路径
+    if(path.dirname.indexOf('\\') > -1) {
+      path.dirname = path.dirname.split('\\')[0]; // 将 views/xxx/img/ 下的图片 提到外面一层 放到 images/xx/ 下。去掉了 img 文件夹
+    } else {
+      path.dirname = path.dirname.split('/')[0]; // 将 views/xxx/img/ 下的图片 提到外面一层 放到 images/xx/ 下。去掉了 img 文件夹
+    }
   }))
   .pipe(plugins.if(options.env === 'production', plugins.imagemin({
     optimizationLevel: 5, // 取值范围：0-7（优化等级）
@@ -115,14 +120,14 @@ task('html', function() {
     done();
   }))
   .pipe(plugins.htmlmin({
-    removeComments: true,               // 清除HTML注释
-    collapseWhitespace: true,           // 压缩空格
-    collapseBooleanAttributes: true,    // 省略布尔属性的值 <input checked="true"/> => <input checked>
-    removeEmptyAttributes: true,        // 删除所有空格作属性值 <input id=""> => <input>
-    removeScriptTypeAttributes: true,   // 删除<script>的type="text/javascript"
-    removeStyleLinkTypeAttributes: true,// 删除<style>和<link>的type="text/css"
-    minifyJS: true,                     // 压缩页面JS
-    minifyCSS: true                     // 压缩页面CSS
+    // removeComments: true,               // 清除HTML注释
+    // collapseWhitespace: true,           // 压缩空格
+    // collapseBooleanAttributes: true,    // 省略布尔属性的值 <input checked="true"/> => <input checked>
+    // removeEmptyAttributes: true,        // 删除所有空格作属性值 <input id=""> => <input>
+    // removeScriptTypeAttributes: true,   // 删除<script>的type="text/javascript"
+    // removeStyleLinkTypeAttributes: true,// 删除<style>和<link>的type="text/css"
+    // minifyJS: true,                     // 压缩页面JS
+    // minifyCSS: true                     // 压缩页面CSS
   }))
   .pipe(dest(paths.dest.html));
 });

@@ -21,26 +21,26 @@
       </a>
 
       <ul class="menu">
-        <li class="menu-item"><a class="menu-link active" href="/">首页</a></li>
-        <li class="menu-item"><a class="menu-link" href="/">项目简介</a></li>
-        <li class="menu-item"><a class="menu-link" href="/">教授阵容</a></li>
-        <li class="menu-item"><a class="menu-link" href="/">新闻动态</a></li>
-        <li class="menu-item"><a class="menu-link" href="/">关于圣知</a></li>
+        <li class="menu-item"><a class="menu-link active" href="../home/home.html">首页</a></li>
+        <li class="menu-item"><a class="menu-link" href="../product/product.html">项目简介</a></li>
+        <li class="menu-item"><a class="menu-link" href="../professor/professor.html">教授阵容</a></li>
+        <li class="menu-item"><a class="menu-link" href="../news/news.html">新闻动态</a></li>
+        <li class="menu-item"><a class="menu-link" href="../about/about.html">关于圣知</a></li>
         <li class="bottomLine"></li>
       </ul>
     </div>
   </div>
   <!-- header end -->
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- 轮播图片 start -->
+  <div id="myCarousel" class="main-carousel carousel slide" data-ride="carousel">
     <!-- 指示符 -->
     <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ul>
     
-    <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="carousel-img" style="background-image: url('https://static.runoob.com/images/mix/img_fjords_wide.jpg')" ></div>
@@ -66,19 +66,430 @@
     </div>
     
     <!-- 左右切换按钮 -->
-    <a class="carousel-control-prev-custom" href="#demo" data-slide="prev">
+    <a class="carousel-control-prev-custom" href="#myCarousel" data-slide="prev">
       <span class="carousel-control-prev-icon-custom"></span>
     </a>
-    <a class="carousel-control-next-custom" href="#demo" data-slide="next">
+    <a class="carousel-control-next-custom" href="#myCarousel" data-slide="next">
       <span class="carousel-control-next-icon-custom"></span>
     </a>
   </div>
-  
+  <!-- 轮播图片 end -->
 
-  <div class="container">
-    <i class="iconfont iconcall"></i>
-    这里放内容
+  
+  <!-- 切换tab start -->
+  <div class="switch-tab">
+    <div class="container">
+      <div class="switch-tab-inner clearfix">
+        <div class="switch-tab-item">
+          <div class="switch-tab-item-inner">
+            <img class="tab-icon" src="../../dist/img/home/icon_01.png" alt="" />
+            <img class="tab-icon-light" src="../../dist/img/home/icon_01_white.png" alt="" />
+            <h2>海外科研</h2>
+            <p>lorem inpum odor sit amet</p>
+            <img class="indicator-icon" src="../../dist/img/home/Product_bt.png" alt="" />
+          </div>
+        </div>
+        <div class="switch-tab-item">
+          <div class="switch-tab-item-inner">
+            <img class="tab-icon" src="../../dist/img/home/icon_02.png" alt="">
+            <img class="tab-icon-light" src="../../dist/img/home/icon_02_white.png" alt="">
+            <h2>海外科研</h2>
+            <p>lorem inpum odor sit amet</p>
+            <img class="indicator-icon" src="../../dist/img/home/Product_bt.png" alt="">
+          </div>
+        </div>
+        <div class="switch-tab-item">
+          <div class="switch-tab-item-inner">
+            <img class="tab-icon" src="../../dist/img/home/icon_03.png" alt="">
+            <img class="tab-icon-light" src="../../dist/img/home/icon_03_white.png" alt="">
+            <h2>海外科研</h2>
+            <p>lorem inpum odor sit amet</p>
+            <img class="indicator-icon" src="../../dist/img/home/Product_bt.png" alt="">
+          </div>
+        </div>
+        <div class="switch-tab-item">
+          <div class="switch-tab-item-inner">
+            <img class="tab-icon" src="../../dist/img/home/icon_04.png" alt="">
+            <img class="tab-icon-light" src="../../dist/img/home/icon_04_white.png" alt="">
+            <h2>海外科研</h2>
+            <p>lorem inpum odor sit amet</p>
+            <img class="indicator-icon" src="../../dist/img/home/Product_bt.png" alt="">
+          </div>
+        </div>
+        <div class="switch-tab-item">
+          <div class="switch-tab-item-inner">
+            <img class="tab-icon" src="../../dist/img/home/icon_05.png" alt="">
+            <img class="tab-icon-light" src="../../dist/img/home/icon_05_white.png" alt="">
+            <h2>海外科研</h2>
+            <p>lorem inpum odor sit amet</p>
+            <img class="indicator-icon" src="../../dist/img/home/Product_bt.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- 切换tab start -->
+
+  <!-- 切换tab content start -->
+  <div class="tab-content">
+    <div class="container clearfix">
+      <div class="tab-content-left">
+        <div class="img-wrap">
+          <img class="img-item img-item-one" src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" alt="">
+          <img class="img-item img-item-two active" src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" alt="">
+        </div>
+        <div class="tab-img-indicators">
+          <span class="tab-img-indicators-prev">&lt;</span>
+          <span class="tab-img-indicators-num tab-img-indicators-0 active">01/</span>
+          <span class="tab-img-indicators-num tab-img-indicators-1">02</span>
+          <span class="tab-img-indicators-prev">&gt;</span>
+        </div>
+      </div>
+      <div class="tab-content-right">
+        <p class="reason-title-en">/WHY WE DO</p>
+        <h2 class="reason-title">为什么要做背景提升？</h2>
+        <ul class="reason-list clearfix">
+          <li>
+            <img src="../../dist/img/home/pic_plus.png" alt="">
+            <span>冲击名校</span>
+          </li>
+          <li>
+            <img src="../../dist/img/home/pic_plus.png" alt="">
+            <span>提前适应西方教育的模式和方法</span>
+          </li>
+          <li>
+            <img src="../../dist/img/home/pic_plus.png" alt="">
+            <span>标化考试成绩不够突出</span>
+          </li>
+          <li>
+            <img src="../../dist/img/home/pic_plus.png" alt="">
+            <span>掌握科学研究应有的思维、逻辑和态度</span>
+          </li>
+          <li>
+            <img src="../../dist/img/home/pic_plus.png" alt="">
+            <span>多维度展现自身优秀特质</span>
+          </li>
+          <li>
+            <img src="../../dist/img/home/pic_plus.png" alt="">
+            <span>挖掘个人兴趣，增强个人能力，明确未来发展</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 切换tab content end -->
+
+  <!-- 教授整容轮播图 start -->
+  <div class="container">
+    <p class="professor-title-en">—— PROFESSOR</p>
+    <h2 class="professor-title">
+      教授阵容
+      <a class="professor-more" href="../professor/professor.html">Learn more</a>
+    </h2>
+  </div>
+  <div class="professor">
+    <div class="container">
+
+      <div id="professorCarousel" class="professor-carousel carousel slide" data-ride="carousel">
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+          <li data-target="#professorCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#professorCarousel" data-slide-to="1"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="clearfix">
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_01_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_01_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_02_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_02_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_03_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_03_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_04_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_04_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_05_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_05_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="clearfix">
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_05_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_05_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_04_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_04_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_03_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_03_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_02_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_02_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+              <div class="professor-item">
+                <img class="professor-avatar professor-avatar-default" src="../../dist/img/home/professor_01_gray.png" alt="">
+                <img class="professor-avatar professor-avatar-light" src="../../dist/img/home/professor_01_white.png" alt="">
+                <p class="professor-name">Prof. Coggesshall </p>
+                <p class="professor-school">南加大马歇尔商学院</p>
+                <p class="professor-position">客座教授</p>
+                <p class="professor-desc">南加大剧本创作研究生项目创办人国际知名编剧，荣获艾美奖、柏林电影节蓝熊奖、墨西哥银色女神奖、柏林电影节蓝熊奖</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev-custom" href="#professorCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon-custom"></span>
+        </a>
+        <a class="carousel-control-next-custom" href="#professorCarousel" data-slide="next">
+          <span class="carousel-control-next-icon-custom"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 教授整容轮播图 end -->
+
+
+  <!-- 最新动态轮播图 start -->
+  <div class="container">
+    <p class="news-title-en">—— OUR NEWS</p>
+    <div class="news-wrap">
+      <h2 class="news-title">最新动态</h2>
+      <ul class="news-tab clearfix">
+        <li class="active">科研</li>
+        <li>教学</li>
+        <li>成果</li>
+        <li>广告</li>
+      </ul>
+      <a class="news-more" href="../news/news.html">Learn more</a>
+    </div>
+  </div>
+
+  <div class="news-carousel-wrap">
+    <div class="container">
+
+      <div id="newsCarousel" class="news-carousel carousel slide" data-ride="carousel">
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+          <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#newsCarousel" data-slide-to="1"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="news-item-wrap clearfix">
+              <div class="news-item">
+                <div class="news-poster-wrap">
+                  <img class="news-poster" src="../../dist/img/home/pic_01.png" alt="">
+                  <div class="news-poster-mask">
+                    <img class="news-poster-mask-icon" src="../../dist/img/home/news_icon_bt.png" alt="">
+                  </div>
+                </div>
+                <span class="news-time">Jan  01 2019</span>
+                <span class="news-tag">留学攻略</span>
+                <p class="news-name">科研学术项目实习机会科研学术项目实习机会</p>
+              </div>
+              <div class="news-item">
+                <div class="news-poster-wrap">
+                  <img class="news-poster" src="../../dist/img/home/pic_02.png" alt="">
+                  <div class="news-poster-mask">
+                    <img class="news-poster-mask-icon" src="../../dist/img/home/news_icon_bt.png" alt="">
+                  </div>
+                </div>
+                <span class="news-time">Jan  01 2019</span>
+                <span class="news-tag">留学攻略</span>
+                <p class="news-name">科研学术项目实习机会科研学术项目实习机会</p>
+              </div>
+              <div class="news-item">
+                <div class="news-poster-wrap">
+                  <img class="news-poster" src="../../dist/img/home/pic_03.png" alt="">
+                  <div class="news-poster-mask">
+                    <img class="news-poster-mask-icon" src="../../dist/img/home/news_icon_bt.png" alt="">
+                  </div>
+                </div>
+                <span class="news-time">Jan  01 2019</span>
+                <span class="news-tag">留学攻略</span>
+                <p class="news-name">科研学术项目实习机会科研学术项目实习机会</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="news-item-wrap clearfix">
+              <div class="news-item">
+                <div class="news-poster-wrap">
+                  <img class="news-poster" src="../../dist/img/home/pic_01.png" alt="">
+                  <div class="news-poster-mask">
+                    <img class="news-poster-mask-icon" src="../../dist/img/home/news_icon_bt.png" alt="">
+                  </div>
+                </div>
+                <span class="news-time">Jan  01 2019</span>
+                <span class="news-tag">留学攻略</span>
+                <p class="news-name">科研学术项目实习机会科研学术项目实习机会</p>
+              </div>
+              <div class="news-item">
+                <div class="news-poster-wrap">
+                  <img class="news-poster" src="../../dist/img/home/pic_02.png" alt="">
+                  <div class="news-poster-mask">
+                    <img class="news-poster-mask-icon" src="../../dist/img/home/news_icon_bt.png" alt="">
+                  </div>
+                </div>
+                <span class="news-time">Jan  01 2019</span>
+                <span class="news-tag">留学攻略</span>
+                <p class="news-name">科研学术项目实习机会科研学术项目实习机会</p>
+              </div>
+              <div class="news-item">
+                <div class="news-poster-wrap">
+                  <img class="news-poster" src="../../dist/img/home/pic_03.png" alt="">
+                  <div class="news-poster-mask">
+                    <img class="news-poster-mask-icon" src="../../dist/img/home/news_icon_bt.png" alt="">
+                  </div>
+                </div>
+                <span class="news-time">Jan  01 2019</span>
+                <span class="news-tag">留学攻略</span>
+                <p class="news-name">科研学术项目实习机会科研学术项目实习机会</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev-custom" href="#newsCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon-custom"></span>
+        </a>
+        <a class="carousel-control-next-custom" href="#newsCarousel" data-slide="next">
+          <span class="carousel-control-next-icon-custom"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 最新动态轮播图 end -->
+
+  <!-- banner start -->
+  <div class="banner-wrap">
+    <div class="container clearfix">
+      <div class="banner-info-item">
+        <p class="banner-info-item-num">500+</p>
+        <p class="banner-info-item-name">teachers</p>
+      </div>
+      <div class="banner-info-item">
+        <p class="banner-info-item-num">500+</p>
+        <p class="banner-info-item-name">teachers</p>
+      </div>
+      <div class="banner-info-item">
+        <p class="banner-info-item-num">500+</p>
+        <p class="banner-info-item-name">teachers</p>
+      </div>
+      <div class="banner-info-item-btn">
+        <button class="banner-button banner-button-fill">免费咨询</button>  
+        <button class="banner-button banner-button-outline">WHY选择圣知</button>  
+      </div>
+    </div>
+  </div>
+  <!-- banner end -->
+
+
+  <!-- 合作伙伴 start -->
+  <div class="cooperation-wrap">
+    <div class="container">
+      <p class="cooperation-title-en">—— OUR PARTNERS</p>
+      <h2 class="cooperation-title">
+        合作伙伴
+        <a class="cooperation-more" href="../professor/professor.html">Learn more</a>
+      </h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="cooperation-item">
+          <img class="cooperation-icon" src="../../dist/img/home/partner_01_black.png" alt="">
+          <img class="cooperation-icon-active" src="../../dist/img/home/partner_01.png" alt="">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="cooperation-item">
+          <img class="cooperation-icon" src="../../dist/img/home/partner_02_black.png" alt="">
+          <img class="cooperation-icon-active" src="../../dist/img/home/partner_02.png" alt="">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="cooperation-item">
+          <img class="cooperation-icon" src="../../dist/img/home/partner_03_black.png" alt="">
+          <img class="cooperation-icon-active" src="../../dist/img/home/partner_03.png" alt="">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="cooperation-item">
+          <img class="cooperation-icon" src="../../dist/img/home/partner_04_black.png" alt="">
+          <img class="cooperation-icon-active" src="../../dist/img/home/partner_04.png" alt="">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="cooperation-item">
+          <img class="cooperation-icon" src="../../dist/img/home/partner_05_black.png" alt="">
+          <img class="cooperation-icon-active" src="../../dist/img/home/partner_05.png" alt="">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="cooperation-item">
+          <img class="cooperation-icon" src="../../dist/img/home/partner_06_black.png" alt="">
+          <img class="cooperation-icon-active" src="../../dist/img/home/partner_06.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 合作伙伴 end -->
 
   <!-- footer begin -->
   <div class="footer">
