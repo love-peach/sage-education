@@ -42,3 +42,28 @@ body {
   border: 1px solid red;
 }
 /* -------------------- 页面布局样式 begin -------------------- */
+.banner {
+  width:100%;
+  img {
+    width:100%;
+    height:auto;
+  }
+}
+.my-breadcrumb {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  font-size:0;
+  a {
+    font-size: 16px;
+    color: #606060;
+    display: table-cell;
+    vertical-align: middle;
+    &.active {
+      color: #000;
+    }
+  }
+  .iconfont {
+    margin:0 8px;
+  }
+}
