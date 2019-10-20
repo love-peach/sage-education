@@ -1,6 +1,9 @@
 .pro-wrap {
-  padding-top:116px;
-  padding-bottom: 130px;
+  .container {
+    padding-top:116px;
+    padding-bottom: 130px;
+    position: relative;
+  }
   .pro-list>li {
     margin-bottom: 30px;
     margin-left: 17px;
@@ -13,7 +16,8 @@
     &:nth-child(5n+1){
       margin-left: 0;
     }
-    &:hover{
+    &:hover,
+    &:hover a{
       background: rgba(98,133,217,0.80);
       .avatar {
         .img {
